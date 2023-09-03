@@ -3,12 +3,12 @@ const express = require('express')
 const sequelize = require('sequelize')
 const dotenv = require('dotenv').config()
 const cookieParser = require('cookie-parser')
- const db = require('./Models')
- const userRoutes = require ('./Routes/userRoutes')
+ const db = require('./models')
+ const userRoutes = require ('./routes/userRoutes')
  
 
 //setting up your port
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT
 
 //assigning the variable app to express
 const app = express()
